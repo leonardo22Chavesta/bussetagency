@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="536" viewBox="0 0 720 536" role="img">
+  <rect width="720" height="536" fill="#ffffff"/>
+  <rect x="0" y="0" width="720" height="8" fill="#c6a570"/>
+  <rect x="64" y="48" width="272" height="44" rx="22" fill="#f6f1e8"/>
+  <text x="88" y="77" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#18344f">+400 consultas</text>
+  <text font-family="Georgia, Times New Roman, serif" font-size="72" fill="#eadcc4" x="56" y="150">“</text>
+  <text font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500" fill="#18344f"><tspan x="64" y="168">Con la agencia anterior pasamos</tspan><tspan x="64" y="208">meses sin resultados. Rodrigo tomó</tspan><tspan x="64" y="248">el control y en poco tiempo más de</tspan><tspan x="64" y="288">400 personas nos escribieron y</tspan><tspan x="64" y="328">agendaron consultas.</tspan></text>
+  <line x1="64" y1="404" x2="240" y2="404" stroke="#e7dcc8" stroke-width="2"/>
+  <text x="64" y="452" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#18344f">LaClinic</text>
+  <text x="64" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#5c6d7e">Clínica estética · Meta Ads y redes</text>
+</svg>

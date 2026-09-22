@@ -1,0 +1,73 @@
+---
+import content from '../data/content.json';
+---
+
+<header class="sticky top-0 z-40 border-b border-line/80 bg-white/85 backdrop-blur-md">
+  <div class="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between gap-4 px-5">
+    <a
+      href="#inicio"
+      class="site-header__item site-header__item--1 flex items-center rounded-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+    >
+      <img
+        src="/images/logo.webp"
+        alt={content.site.name}
+        width={160}
+        height={56}
+        class="h-11 w-auto rounded-lg object-contain"
+      />
+    </a>
+
+    <nav class="site-header__item site-header__item--2 hidden items-center gap-8 md:flex" aria-label="Principal">
+      {
+        content.nav.map((item) => (
+          <a href={item.href} class="text-sm font-medium text-muted transition-colors hover:text-ink">
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="site-header__item site-header__item--3 flex items-center gap-2">
+      <a
+        href={content.hero.primaryCta.href}
+        class="hidden h-11 items-center rounded-full bg-brand px-5 text-sm font-semibold text-white ring-1 ring-accent transition-colors hover:bg-brand-deep focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:inline-flex"
+      >
+        {content.hero.primaryCta.label}
+      </a>
+
+      <details class="relative md:hidden">
+        <summary
+          class="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full ring-1 ring-accent/70 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          <span class="sr-only">Abrir menú</span>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M3 5h12M3 9h12M3 13h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+          </svg>
+        </summary>
+        <nav
+          class="absolute right-0 top-14 z-50 w-56 rounded-2xl bg-white p-2 shadow-[0_16px_40px_-20px_rgba(24,52,79,0.45)] ring-1 ring-accent/60"
+          aria-label="Móvil"
+        >
+          {
+            content.nav.map((item) => (
+              <a
+                href={item.href}
+                class="block rounded-xl px-3 py-2.5 text-sm font-medium text-ink hover:bg-ice"
+                onclick="this.closest('details').open=false"
+              >
+                {item.label}
+              </a>
+            ))
+          }
+          <a
+            href={content.hero.primaryCta.href}
+            class="mt-1 block rounded-xl bg-brand px-3 py-2.5 text-center text-sm font-semibold text-white ring-1 ring-accent"
+            onclick="this.closest('details').open=false"
+          >
+            {content.hero.primaryCta.label}
+          </a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>

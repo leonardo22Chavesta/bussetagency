@@ -1,0 +1,240 @@
+{
+  "site": {
+    "name": "Busset Agency",
+    "url": "https://bussetagency.com",
+    "locale": "es-PE",
+    "title": "Flujo predecible de clientes en 30 días | Busset Agency",
+    "description": "Sistema personalizado de Meta Ads, Google Ads, agentes de IA y CRM para medir, responder y automatizar tu captación. Flujo consistente de clientes en 30 días.",
+    "email": "info.alvarezrodrigo@gmail.com"
+  },
+  "nav": [
+    { "label": "Servicios", "href": "#servicios" },
+    { "label": "Proceso", "href": "#proceso" },
+    { "label": "Resultados", "href": "#testimonios" },
+    { "label": "Contacto", "href": "#contacto" }
+  ],
+  "hero": {
+    "badge": "Para negocios que ya probaron marketing sin resultados",
+    "title": "Logra un flujo predecible de clientes consistente en 30 días",
+    "subtitle": "Implementamos un sistema 100% personalizado para medir, responder y automatizar los procesos comerciales que hoy bloquean tus resultados.",
+    "primaryCta": { "label": "Agenda tu auditoría", "href": "#contacto" },
+    "secondaryCta": { "label": "Ver cómo funciona", "href": "#vsl" },
+    "reassurance": "Auditoría inicial para ver si tu empresa califica. Sin compromiso.",
+    "videoId": "XHOmBV4js_E",
+    "videoTitle": "Reproducir el video: cómo funciona el sistema de Busset Agency",
+    "videoCaption": "En pocos minutos: cómo medimos, respondemos y automatizamos tu captación."
+  },
+  "proof": [
+    { "value": "x31", "label": "ROI en cirugías y consultas en 3 meses" },
+    { "value": "x10.4", "label": "Retorno y 132 citas recuperadas en 30 días" },
+    { "value": "x5.2", "label": "Retorno desde la primera campaña" },
+    { "value": "30 días", "label": "Para un flujo de clientes consistente" }
+  ],
+  "services": {
+    "eyebrow": "Sistema",
+    "title": "Servicios para captar, convertir y operar sin fricción",
+    "subtitle": "Anuncios, web, IA, CRM y consultoría. El mismo criterio: medible, personalizado y orientado a agenda.",
+    "ctaLabel": "Quiero este sistema",
+    "items": [
+      {
+        "title": "Anuncios en Meta",
+        "description": "Estrategia, creativos y campañas en Facebook e Instagram, con medición clara desde el día uno.",
+        "image": "/images/meta.webp",
+        "imageAlt": "Icono de Meta Ads",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "title": "Google Ads",
+        "description": "Keywords rentables, estructura limpia y landing lista para capturar a quien ya te busca.",
+        "image": "/images/google-150x150.webp",
+        "imageAlt": "Icono de Google Ads",
+        "width": 150,
+        "height": 150
+      },
+      {
+        "title": "Agentes de IA",
+        "description": "Responden en segundos, califican leads y agendan citas sin perder el tono de tu marca.",
+        "image": "/images/chatbot.webp",
+        "imageAlt": "Icono de agente de inteligencia artificial",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "title": "Sitios web inteligentes",
+        "description": "Web + IA: capturan leads, responden consultas y conectan con tu CRM o agente.",
+        "image": "/images/web-inteligente.svg",
+        "imageAlt": "Icono de sitio web inteligente con IA",
+        "width": 64,
+        "height": 64
+      },
+      {
+        "title": "Sistemas personalizados",
+        "description": "Automatizaciones y flujos a medida para tu operación, sin piezas genéricas que no encajan.",
+        "image": "/images/sistemas.svg",
+        "imageAlt": "Icono de sistemas personalizados",
+        "width": 64,
+        "height": 64
+      },
+      {
+        "title": "CRM",
+        "description": "Contactos y clientes en un solo lugar: seguimiento, segmentación y campañas por estado.",
+        "image": "/images/crm.webp",
+        "imageAlt": "Icono de CRM y control comercial",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "title": "Consultoría",
+        "description": "Diagnóstico y dirección: qué canal priorizar y cómo escalar sin gastar a ciegas.",
+        "image": "/images/consultoria.svg",
+        "imageAlt": "Icono de consultoría",
+        "width": 64,
+        "height": 64
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Cómo trabajamos",
+    "title": "Tres pasos hasta tener el sistema en marcha",
+    "subtitle": "Primero vemos si calificas. Después preparamos el proyecto y lo lanzamos con medición continua.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Auditoría inicial",
+        "description": "En la primera llamada analizamos tu empresa y vemos si califica para la implementación del sistema."
+      },
+      {
+        "number": "02",
+        "title": "Reunión de kickoff",
+        "description": "Pedimos los accesos y materiales necesarios, preparamos el proyecto y lo dejamos listo para tu revisión y publicación."
+      },
+      {
+        "number": "03",
+        "title": "Lanzamiento",
+        "description": "Ejecutamos el proyecto que mejor encaja con tu negocio. Medimos resultados, testeamos y optimizamos de forma continua."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Resultados",
+    "title": "Clientes que ya convirtieron la inversión en agenda",
+    "subtitle": "Clínicas, centros y negocios de servicios que ya implementaron el sistema.",
+    "items": [
+      {
+        "name": "Dr. Julián Ruiz Anicama",
+        "role": "Traumatólogo deportivo e infantil",
+        "metric": "ROI x31",
+        "quote": "Antes de trabajar con Rodrigo, el marketing de mi negocio médico no iba como yo quería: la agencia anterior no le daba el énfasis ni la personalización que buscaba. Desde que empezamos hace 3 meses, entiende mi objetivo y yo me enfoco en atender a mis pacientes. Hoy tenemos un ROI de 31 entre cirugías y consultas.",
+        "image": "/images/testimonials/01-julian-ruiz.svg",
+        "avatar": "/images/Julián_Ruiz_Anicama.png",
+        "avatarPosition": "center 18%",
+        "logo": "/images/logos/julian-ruiz.svg",
+        "logoAlt": "Logo de la práctica del Dr. Julián Ruiz Anicama",
+        "alt": "Testimonio del Dr. Julián Ruiz Anicama: ROI de 31 en cirugías y consultas en 3 meses.",
+        "width": 720,
+        "height": 560,
+        "videoUrl": "https://vimeo.com/1217489885?fl=ip&fe=ec"
+      },
+      {
+        "name": "Dani Arrús & Leticia Poirier",
+        "role": "Cofundadoras de Numalila",
+        "metric": "ROI x5.2",
+        "quote": "Teníamos muchas ideas, pero no sabíamos cómo aterrizarlas ni cómo hacer que los anuncios funcionaran. Desde la primera llamada tuvimos total claridad. Sin haber terminado siquiera la campaña, ya recuperamos toda la inversión y seguimos sumando alumnas nuevas.",
+        "image": "/images/testimonials/02-numalila.svg",
+        "avatar": "/images/Dani_Arrus_Leticia_Poirier.png",
+        "avatarPosition": "center",
+        "avatarFit": "contain",
+        "logo": "/images/logos/numalila.svg",
+        "logoAlt": "Logo de Numalila",
+        "alt": "Testimonio de Dani Arrús y Leticia Poirier, Numalila: retorno de x5.2 y alumnas nuevas desde la primera campaña.",
+        "width": 720,
+        "height": 520,
+        "videoUrl": "https://vimeo.com/1212876794?fl=ip&fe=ec"
+      },
+      {
+        "name": "Dra. Nathaly Merino",
+        "role": "Directora médica · LaClinic",
+        "metric": "+500.000 vistas",
+        "quote": "Antes los resultados eran lentos y costosos. Con Rodrigo fueron rápidos y visibles desde el inicio. Crecimos en seguidores, llegaron más pacientes por redes y varios videos se hicieron virales, superando las 500.000 vistas. En TikTok pasamos de 0 a más de 5.100 seguidores.",
+        "image": "/images/testimonials/04-nathaly-merino.svg",
+        "avatar": "/images/Nathaly_Merino.png",
+        "avatarPosition": "center 12%",
+        "logo": "/images/logos/laclinic.svg",
+        "logoAlt": "Logo de LaClinic",
+        "alt": "Testimonio de la Dra. Nathaly Merino, LaClinic: más de medio millón de vistas y flujo constante de pacientes.",
+        "width": 720,
+        "height": 520,
+        "videoUrl": "https://vimeo.com/1137331839?fl=ip&fe=ec"
+      },
+      {
+        "name": "Adan Valerio",
+        "role": "Quiropráctico",
+        "metric": "ROI x3.7",
+        "quote": "Antes mis pacientes eran inconstantes: un día lleno y otros vacíos. Con el proyecto que Rodrigo me recomendó, logré clientes constantes y tripliqué lo invertido en la campaña desde el primer mes.",
+        "image": "/images/testimonials/05-adan-valerio.svg",
+        "avatar": "/images/Adan_Valerio.png",
+        "avatarPosition": "center 22%",
+        "logo": "/images/logos/adan-valerio.svg",
+        "logoAlt": "Logo de Adan Valerio",
+        "alt": "Testimonio de Adan Valerio, quiropráctico: retorno de x3.7 y clientes constantes desde el primer mes.",
+        "width": 720,
+        "height": 440,
+        "videoUrl": "https://vimeo.com/1137332597?fl=ip&fe=ec"
+      },
+      {
+        "name": "Edgar Casas",
+        "role": "CEO de Lease Digital Solution",
+        "metric": "SEO y copy",
+        "quote": "Rodrigo, un caballero. Muy buen trabajo y siempre aportó más de lo que se solicitó. Capo en su tema.",
+        "image": "/images/testimonials/06-edgar-casas.svg",
+        "avatar": "/images/Edgar.jpg",
+        "avatarPosition": "center 12%",
+        "logo": "/images/logos/lease.svg",
+        "logoAlt": "Logo de Lease Digital Solution",
+        "alt": "Testimonio de Edgar Casas, CEO de Lease Digital Solution, sobre SEO y copywriting.",
+        "width": 720,
+        "height": 280,
+        "videoUrl": ""
+      },
+      {
+        "name": "Toshiba Ascensores",
+        "role": "Construcción web",
+        "metric": "Web rápida",
+        "quote": "Nuestra página web tenía serios problemas de velocidad. Rodrigo nos creó una nueva, optimizada y con páginas para cada servicio. El cambio fue total.",
+        "image": "/images/testimonials/08-toshiba.svg",
+        "avatar": "/images/Toshiba_Ascensores.png",
+        "avatarPosition": "center 35%",
+        "logo": "/images/logos/toshiba.svg",
+        "logoAlt": "Logo de Toshiba Ascensores",
+        "alt": "Testimonio de Toshiba Ascensores: nueva web optimizada en velocidad y con una página por servicio.",
+        "width": 720,
+        "height": 360,
+        "videoUrl": ""
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Auditoría inicial",
+    "title": "Llena tu agenda de forma constante",
+    "subtitle": "La mayoría de nuestros clientes ya había trabajado con agencias. Si probaste estrategias y no viste resultados, cuéntanos tu caso.",
+    "submitLabel": "Solicitar auditoría inicial",
+    "endpoint": ""
+  },
+  "footer": {
+    "blurb": "Growth marketing para negocios de servicios que necesitan un flujo de clientes medible, no más campañas sueltas.",
+    "links": [
+      { "label": "Servicios", "href": "#servicios" },
+      { "label": "Proceso", "href": "#proceso" },
+      { "label": "Resultados", "href": "#testimonios" },
+      { "label": "Contacto", "href": "#contacto" }
+    ],
+    "social": [
+      { "label": "Facebook", "href": "https://www.facebook.com/people/Busset-Agency/61590525463511/" },
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/company/busset-agency/" },
+      { "label": "Instagram", "href": "https://www.instagram.com/bussetagency/" },
+      { "label": "YouTube", "href": "https://www.youtube.com/@BussetAgency" }
+    ],
+    "copyright": "Busset Agency. Todos los derechos reservados."
+  }
+}

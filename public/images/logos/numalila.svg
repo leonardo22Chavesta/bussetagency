@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40" role="img">
+  <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="19.25" fill="#18344f" stroke="#c6a570" stroke-width="1.5"/>
+  <text x="20" y="25" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#c6a570">NL</text>
+  <text x="48" y="26" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#18344f">Numalila</text>
+</svg>

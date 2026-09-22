@@ -1,0 +1,87 @@
+---
+import '../styles/global.css';
+import content from '../data/content.json';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = content.site.title, description = content.site.description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${content.site.url}/#organization`,
+      name: content.site.name,
+      url: content.site.url,
+      email: content.site.email,
+      sameAs: content.footer.social.map((item) => item.href),
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${content.site.url}/#website`,
+      url: content.site.url,
+      name: content.site.name,
+      inLanguage: content.site.locale,
+      publisher: { '@id': `${content.site.url}/#organization` },
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${content.site.url}/#webpage`,
+      url: content.site.url,
+      name: title,
+      description,
+      inLanguage: content.site.locale,
+      isPartOf: { '@id': `${content.site.url}/#website` },
+      about: { '@id': `${content.site.url}/#organization` },
+    },
+    {
+      '@type': 'ProfessionalService',
+      name: content.site.name,
+      url: content.site.url,
+      email: content.site.email,
+      description,
+      areaServed: 'PE',
+      knowsAbout: content.services.items.map((item) => item.title),
+    },
+  ],
+};
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#18344f" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_PE" />
+    <meta property="og:site_name" content={content.site.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <link rel="icon" type="image/webp" href="/images/logo.webp" />
+    <link rel="apple-touch-icon" href="/images/logo.webp" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body class="bg-white font-sans text-ink antialiased">
+    <a
+      href="#contenido"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-brand focus:px-4 focus:py-2 focus:text-white focus:ring-1 focus:ring-accent"
+    >
+      Saltar al contenido
+    </a>
+    <slot />
+  </body>
+</html>

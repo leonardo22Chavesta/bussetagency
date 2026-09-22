@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440" role="img">
+  <rect width="720" height="440" fill="#ffffff"/>
+  <rect x="0" y="0" width="720" height="8" fill="#c6a570"/>
+  <text font-family="Georgia, Times New Roman, serif" font-size="72" fill="#eadcc4" x="56" y="150">“</text>
+  <text font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500" fill="#18344f"><tspan x="64" y="168">Antes mis pacientes eran</tspan><tspan x="64" y="208">inconstantes: un día lleno y otros</tspan><tspan x="64" y="248">vacíos. Con el proyecto que</tspan><tspan x="64" y="288">Rodrigo me recomendó, logré</tspan><tspan x="64" y="328">clientes constantes y tripliqué lo</tspan><tspan x="64" y="368">invertido en la campaña desde el</tspan><tspan x="64" y="408">primer mes.</tspan></text>
+</svg>

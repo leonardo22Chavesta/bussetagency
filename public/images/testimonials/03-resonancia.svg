@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="696" viewBox="0 0 720 696" role="img">
+  <rect width="720" height="696" fill="#ffffff"/>
+  <rect x="0" y="0" width="720" height="8" fill="#c6a570"/>
+  <rect x="64" y="48" width="192" height="44" rx="22" fill="#f6f1e8"/>
+  <text x="88" y="77" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#18344f">ROI x10.4</text>
+  <text font-family="Georgia, Times New Roman, serif" font-size="72" fill="#eadcc4" x="56" y="150">“</text>
+  <text font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500" fill="#18344f"><tspan x="64" y="168">Antes trabajamos con dos agencias</tspan><tspan x="64" y="208">y nunca vimos resultados. Todo era</tspan><tspan x="64" y="248">desordenado y no generaba citas.</tspan><tspan x="64" y="288">Con Rodrigo fue completamente</tspan><tspan x="64" y="328">distinto: recibimos un retorno de</tspan><tspan x="64" y="368">x10 en el primer mes y nuestros</tspan><tspan x="64" y="408">videos superaron las 50.000</tspan><tspan x="64" y="448">vistas. Hoy sabemos exactamente</tspan><tspan x="64" y="488">dónde estamos.</tspan></text>
+  <line x1="64" y1="564" x2="240" y2="564" stroke="#e7dcc8" stroke-width="2"/>
+  <text x="64" y="612" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#18344f">Jefa de operaciones</text>
+  <text x="64" y="648" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#5c6d7e">Centro de resonancia magnética</text>
+</svg>

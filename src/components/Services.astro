@@ -1,0 +1,37 @@
+---
+import content from '../data/content.json';
+import ServiceCard from './ServiceCard';
+---
+
+<section id="servicios" class="bg-white py-20 md:py-28" aria-labelledby="servicios-titulo">
+  <div class="mx-auto max-w-6xl px-5">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="inline-flex items-center gap-3 text-sm font-semibold tracking-[0.14em] text-brand uppercase">
+        <span class="h-px w-8 bg-accent" aria-hidden="true"></span>
+        {content.services.eyebrow}
+        <span class="h-px w-8 bg-accent" aria-hidden="true"></span>
+      </p>
+      <h2 id="servicios-titulo" class="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+        {content.services.title}
+      </h2>
+      <p class="mt-4 text-lg leading-relaxed text-muted">{content.services.subtitle}</p>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {
+        content.services.items.map((service) => (
+          <ServiceCard
+            title={service.title}
+            description={service.description}
+            image={service.image}
+            imageAlt={service.imageAlt}
+            width={service.width}
+            height={service.height}
+            ctaLabel={content.services.ctaLabel}
+            ctaHref="#contacto"
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

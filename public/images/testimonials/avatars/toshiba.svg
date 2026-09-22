@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112" role="img">
+  <circle cx="56" cy="56" r="56" fill="#18344f"/>
+  <circle cx="56" cy="56" r="52" fill="none" stroke="#c6a570" stroke-width="3"/>
+  <text x="56" y="64" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" fill="#c6a570">TA</text>
+</svg>

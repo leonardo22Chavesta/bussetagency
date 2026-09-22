@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="280" viewBox="0 0 720 280" role="img">
+  <rect width="720" height="280" fill="#ffffff"/>
+  <rect x="0" y="0" width="720" height="8" fill="#c6a570"/>
+  <text font-family="Georgia, Times New Roman, serif" font-size="72" fill="#eadcc4" x="56" y="150">“</text>
+  <text font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="500" fill="#18344f"><tspan x="64" y="168">Rodrigo, un caballero. Muy buen</tspan><tspan x="64" y="208">trabajo y siempre aportó más de lo</tspan><tspan x="64" y="248">que se solicitó. Capo en su tema.</tspan></text>
+</svg>
