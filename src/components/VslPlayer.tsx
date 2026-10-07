@@ -31,7 +31,7 @@ export default function VslPlayer({ videoId, title }: Props) {
       disabled={!videoId}
     >
       <span className="absolute inset-0 bg-brand/25 transition-colors group-hover:bg-brand/35" aria-hidden="true" />
-      <span className="relative z-10 flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full bg-accent text-brand shadow-[0_12px_30px_-8px_rgba(198,165,112,0.85)] ring-4 ring-white/80 transition-transform group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100">
+      <span className="relative z-10 flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full bg-accent text-brand shadow-[0_12px_30px_-8px_rgba(110,47,66,0.55)] ring-4 ring-white/80 transition-transform group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
           <path d="M10 7.5v13l11-6.5-11-6.5Z" fill="currentColor" />
         </svg>

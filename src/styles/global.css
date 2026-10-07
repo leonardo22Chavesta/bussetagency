@@ -3,16 +3,16 @@
 
 @theme {
   --font-sans: "Plus Jakarta Sans Variable", ui-sans-serif, system-ui, sans-serif;
-  --color-ink: #18344f;
-  --color-muted: #5c6d7e;
-  --color-line: #e6dfd4;
-  --color-ice: #f7f5f2;
-  --color-mist: #f3eee6;
-  --color-brand: #18344f;
-  --color-brand-deep: #102536;
-  --color-accent: #c6a570;
-  --color-navy: #18344f;
-  --color-navy-soft: #234866;
+  --color-ink: #4a1f2c;
+  --color-muted: #6b5a5f;
+  --color-line: #ecdde0;
+  --color-ice: #fbf6f7;
+  --color-mist: #f7edee;
+  --color-brand: #6e2f42;
+  --color-brand-deep: #55212f;
+  --color-accent: #e1c3c9;
+  --color-navy: #6e2f42;
+  --color-navy-soft: #8a4a5d;
 }
 
 html {
@@ -31,8 +31,8 @@ footer[id] {
 }
 
 ::selection {
-  background: #ead9bc;
-  color: #18344f;
+  background: #e1c3c9;
+  color: #6e2f42;
 }
 
 summary::-webkit-details-marker {
@@ -121,8 +121,8 @@ summary {
   border-radius: 50%;
   background: radial-gradient(
     ellipse at center,
-    rgba(198, 165, 112, 0.42) 0%,
-    rgba(243, 234, 220, 0.55) 38%,
+    rgba(225, 195, 201, 0.55) 0%,
+    rgba(247, 237, 238, 0.6) 38%,
     rgba(255, 255, 255, 0) 72%
   );
   transform: translate3d(-50%, 0, 0);

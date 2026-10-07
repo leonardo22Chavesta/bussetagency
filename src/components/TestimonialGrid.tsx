@@ -88,7 +88,7 @@ function safeParse(value: string) {
 
 function Stars() {
   return (
-    <div className="mb-1 flex gap-0.5 text-accent" aria-label="5 de 5 estrellas">
+    <div className="mb-1 flex gap-0.5 text-brand" aria-label="5 de 5 estrellas">
       {Array.from({ length: 5 }, (_, index) => (
         <svg key={index} width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12 2.2 14.9 8.7 22 9.5l-5.2 4.7 1.5 7.1L12 17.8 5.7 21.3l1.5-7.1L2 9.5l7.1-.8L12 2.2Z" />
@@ -134,7 +134,7 @@ function QuoteBody({ item }: { item: TestimonialItem }) {
 
 function VideoCard({ item }: { item: TestimonialItem }) {
   return (
-    <figure className="testimonial-card mb-4 break-inside-avoid overflow-hidden rounded-3xl bg-white shadow-[0_18px_40px_-28px_rgba(24,52,79,0.45)] ring-1 ring-accent">
+    <figure className="testimonial-card mb-4 break-inside-avoid overflow-hidden rounded-3xl bg-white shadow-[0_18px_40px_-28px_rgba(110,47,66,0.45)] ring-1 ring-accent">
       <VideoPlayer videoUrl={item.videoUrl} title={`Testimonio en video de ${item.name}`} />
       <QuoteBody item={item} />
       <Person item={item} />
@@ -144,7 +144,7 @@ function VideoCard({ item }: { item: TestimonialItem }) {
 
 function ImageCard({ item }: { item: TestimonialItem }) {
   return (
-    <figure className="testimonial-card mb-4 break-inside-avoid overflow-hidden rounded-3xl bg-white shadow-[0_18px_40px_-28px_rgba(24,52,79,0.45)] ring-1 ring-accent">
+    <figure className="testimonial-card mb-4 break-inside-avoid overflow-hidden rounded-3xl bg-white shadow-[0_18px_40px_-28px_rgba(110,47,66,0.45)] ring-1 ring-accent">
       <QuoteBody item={item} />
       <Person item={item} />
     </figure>

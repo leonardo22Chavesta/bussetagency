@@ -5,7 +5,7 @@ import VslPlayer from './VslPlayer';
 
 <section
   id="inicio"
-  class="hero-stage relative overflow-hidden bg-[radial-gradient(ellipse_80%_50%_at_50%_-10%,_#f3eadc_0%,_rgba(255,255,255,0)_70%)]"
+  class="hero-stage relative overflow-hidden bg-[radial-gradient(ellipse_80%_50%_at_50%_-10%,_#f7edee_0%,_rgba(255,255,255,0)_70%)]"
 >
   <div class="hero-glow" aria-hidden="true"></div>
 
@@ -30,13 +30,13 @@ import VslPlayer from './VslPlayer';
     <div class="hero-enter hero-enter--4 mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
       <a
         href={content.hero.primaryCta.href}
-        class="inline-flex h-12 w-full items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white ring-1 ring-accent transition-colors hover:bg-brand-deep focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:w-auto"
+        class="inline-flex h-12 w-full items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-white ring-1 ring-accent transition-colors hover:bg-brand-deep focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:w-auto"
       >
         {content.hero.primaryCta.label}
       </a>
       <a
         href={content.hero.secondaryCta.href}
-        class="inline-flex h-12 w-full items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-brand ring-1 ring-accent/80 transition-colors hover:bg-mist focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:w-auto"
+        class="inline-flex h-12 w-full items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-brand ring-1 ring-accent/80 transition-colors hover:bg-mist focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:w-auto"
       >
         {content.hero.secondaryCta.label}
       </a>
@@ -45,7 +45,7 @@ import VslPlayer from './VslPlayer';
     <p class="hero-enter hero-enter--5 mt-4 text-sm text-muted">{content.hero.reassurance}</p>
 
     <div id="vsl" class="hero-enter hero-enter--6 mx-auto mt-12 max-w-4xl scroll-mt-28">
-      <div class="relative aspect-video overflow-hidden rounded-3xl bg-mist shadow-[0_30px_70px_-36px_rgba(24,52,79,0.45)] ring-1 ring-accent">
+      <div class="relative aspect-video overflow-hidden rounded-3xl bg-mist shadow-[0_30px_70px_-36px_rgba(110,47,66,0.45)] ring-1 ring-accent">
         <VslPlayer client:visible videoId={content.hero.videoId} title={content.hero.videoTitle} />
       </div>
       <p class="mt-4 text-sm text-muted">{content.hero.videoCaption}</p>

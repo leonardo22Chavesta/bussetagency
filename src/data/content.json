@@ -217,9 +217,7 @@
   "contact": {
     "eyebrow": "Auditoría inicial",
     "title": "Llena tu agenda de forma constante",
-    "subtitle": "La mayoría de nuestros clientes ya había trabajado con agencias. Si probaste estrategias y no viste resultados, cuéntanos tu caso.",
-    "submitLabel": "Solicitar auditoría inicial",
-    "endpoint": ""
+    "subtitle": "La mayoría de nuestros clientes ya había trabajado con agencias. Si probaste estrategias y no viste resultados, cuéntanos tu caso."
   },
   "footer": {
     "blurb": "Growth marketing para negocios de servicios que necesitan un flujo de clientes medible, no más campañas sueltas.",

@@ -6,14 +6,14 @@ import content from '../data/content.json';
   <div class="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between gap-4 px-5">
     <a
       href="#inicio"
-      class="site-header__item site-header__item--1 flex items-center rounded-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+      class="site-header__item site-header__item--1 flex items-center rounded-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
     >
       <img
-        src="/images/logo.webp"
+        src="/images/logo-busset.png"
         alt={content.site.name}
-        width={160}
-        height={56}
-        class="h-11 w-auto rounded-lg object-contain"
+        width={395}
+        height={378}
+        class="h-14 w-auto object-contain"
       />
     </a>
 
@@ -30,14 +30,14 @@ import content from '../data/content.json';
     <div class="site-header__item site-header__item--3 flex items-center gap-2">
       <a
         href={content.hero.primaryCta.href}
-        class="hidden h-11 items-center rounded-full bg-brand px-5 text-sm font-semibold text-white ring-1 ring-accent transition-colors hover:bg-brand-deep focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:inline-flex"
+        class="hidden h-11 items-center rounded-full bg-brand px-5 text-sm font-semibold text-white ring-1 ring-accent transition-colors hover:bg-brand-deep focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand sm:inline-flex"
       >
         {content.hero.primaryCta.label}
       </a>
 
       <details class="relative md:hidden">
         <summary
-          class="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full ring-1 ring-accent/70 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          class="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full ring-1 ring-accent/70 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
           <span class="sr-only">Abrir menú</span>
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
@@ -45,7 +45,7 @@ import content from '../data/content.json';
           </svg>
         </summary>
         <nav
-          class="absolute right-0 top-14 z-50 w-56 rounded-2xl bg-white p-2 shadow-[0_16px_40px_-20px_rgba(24,52,79,0.45)] ring-1 ring-accent/60"
+          class="absolute right-0 top-14 z-50 w-56 rounded-2xl bg-white p-2 shadow-[0_16px_40px_-20px_rgba(110,47,66,0.45)] ring-1 ring-accent/60"
           aria-label="Móvil"
         >
           {
