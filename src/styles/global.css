@@ -1,5 +1,8 @@
 @import "tailwindcss";
 @import "@fontsource-variable/plus-jakarta-sans";
+@source not "../pages/optin.astro";
+@source not "../pages/vsl.astro";
+@source not "../pages/calendario.astro";
 
 @theme {
   --font-sans: "Plus Jakarta Sans Variable", ui-sans-serif, system-ui, sans-serif;

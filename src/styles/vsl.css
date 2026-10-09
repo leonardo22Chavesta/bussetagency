@@ -1,0 +1,15 @@
+@import "tailwindcss" source(none);
+@source "../pages/vsl.astro";
+
+@theme {
+  --color-wine: #6c1530;
+  --color-rose: #daa0a9;
+  --color-blush: #f2d7d9;
+  --color-ink: #16050b;
+  --color-ink-2: #1a070e;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+html { scroll-behavior: smooth; }
+body { background-color: #ffffff; }

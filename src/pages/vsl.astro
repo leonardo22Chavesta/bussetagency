@@ -1,0 +1,314 @@
+---
+import '../styles/vsl.css';
+
+const CALENDAR_URL = 'https://aceleradora.bussetagency.com/calendario';
+const VSL_SRC = '/images/vsl-main.mp4';
+
+interface Testimonial {
+  name: string;
+  role: string;
+  quote: string;
+  highlight: string;
+  image: string;
+  avatar: string;
+  avatarPosition?: string;
+  avatarFit?: 'cover' | 'contain';
+  logo: string;
+  logoAlt: string;
+  alt: string;
+  width: number;
+  height: number;
+  videoUrl: string;
+}
+
+const testimonials: Testimonial[] = [
+  {
+    name: 'Dr. Julián Ruiz Anicama',
+    role: 'Traumatólogo deportivo e infantil',
+    quote:
+      'Antes de trabajar con Rodrigo, el marketing de mi negocio médico no iba como yo quería: la agencia anterior no le daba el énfasis ni la personalización que buscaba. Desde que empezamos hace 3 meses, entiende mi objetivo y yo me enfoco en atender a mis pacientes. Hoy tenemos un ROI de 31 entre cirugías y consultas.',
+    highlight: 'ROI x31 en cirugías y consultas en 3 meses',
+    image: '/images/testimonials/01-julian-ruiz.svg',
+    avatar: '/images/Julián_Ruiz_Anicama.png',
+    avatarPosition: 'center 18%',
+    logo: '/images/logos/julian-ruiz.svg',
+    logoAlt: 'Logo de la práctica del Dr. Julián Ruiz Anicama',
+    alt: 'Testimonio del Dr. Julián Ruiz Anicama: ROI de 31 en cirugías y consultas en 3 meses.',
+    width: 720,
+    height: 560,
+    videoUrl: 'https://vimeo.com/1217489885?fl=ip&fe=ec',
+  },
+  {
+    name: 'Dani Arrús & Leticia Poirier',
+    role: 'Cofundadoras de Numalila',
+    quote:
+      'Teníamos muchas ideas, pero no sabíamos cómo aterrizarlas ni cómo hacer que los anuncios funcionaran. Desde la primera llamada tuvimos total claridad. Sin haber terminado siquiera la campaña, ya recuperamos toda la inversión y seguimos sumando alumnas nuevas.',
+    highlight: 'Retorno x5.2 desde la primera campaña',
+    image: '/images/testimonials/02-numalila.svg',
+    avatar: '/images/Dani_Arrus_Leticia_Poirier.png',
+    avatarPosition: 'center',
+    avatarFit: 'contain',
+    logo: '/images/logos/numalila.svg',
+    logoAlt: 'Logo de Numalila',
+    alt: 'Testimonio de Dani Arrús y Leticia Poirier, Numalila: retorno de x5.2 y alumnas nuevas desde la primera campaña.',
+    width: 720,
+    height: 520,
+    videoUrl: 'https://vimeo.com/1212876794?fl=ip&fe=ec',
+  },
+  {
+    name: 'Dra. Nathaly Merino',
+    role: 'Directora médica · LaClinic',
+    quote:
+      'Antes los resultados eran lentos y costosos. Con Rodrigo fueron rápidos y visibles desde el inicio. Crecimos en seguidores, llegaron más pacientes por redes y varios videos se hicieron virales, superando las 500.000 vistas. En TikTok pasamos de 0 a más de 5.100 seguidores.',
+    highlight: '+500.000 vistas y flujo constante de pacientes',
+    image: '/images/testimonials/04-nathaly-merino.svg',
+    avatar: '/images/Nathaly_Merino.png',
+    avatarPosition: 'center 12%',
+    logo: '/images/logos/laclinic.svg',
+    logoAlt: 'Logo de LaClinic',
+    alt: 'Testimonio de la Dra. Nathaly Merino, LaClinic: más de medio millón de vistas y flujo constante de pacientes.',
+    width: 720,
+    height: 520,
+    videoUrl: 'https://vimeo.com/1137331839?fl=ip&fe=ec',
+  },
+  {
+    name: 'Adan Valerio',
+    role: 'Quiropráctico',
+    quote:
+      'Antes mis pacientes eran inconstantes: un día lleno y otros vacíos. Con el proyecto que Rodrigo me recomendó, logré clientes constantes y tripliqué lo invertido en la campaña desde el primer mes.',
+    highlight: 'Retorno x3.7 desde el primer mes',
+    image: '/images/testimonials/05-adan-valerio.svg',
+    avatar: '/images/Adan_Valerio.png',
+    avatarPosition: 'center 22%',
+    logo: '/images/logos/adan-valerio.svg',
+    logoAlt: 'Logo de Adan Valerio',
+    alt: 'Testimonio de Adan Valerio, quiropráctico: retorno de x3.7 y clientes constantes desde el primer mes.',
+    width: 720,
+    height: 440,
+    videoUrl: 'https://vimeo.com/1137332597?fl=ip&fe=ec',
+  },
+];
+
+// https://vimeo.com/123?x=y -> https://player.vimeo.com/video/123
+const toVimeoEmbed = (url: string) => {
+  const id = url.match(/vimeo\.com\/(?:video\/)?(\d+)/)?.[1];
+  return id
+    ? `https://player.vimeo.com/video/${id}?title=0&byline=0&portrait=0&dnt=1#t=1s`
+    : url;
+};
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Busset Agency · Llena tu agenda con pacientes cualificados</title>
+    <meta
+      name="description"
+      content="Descubre el sistema exacto que usamos para llenar la agenda de clínicas médicas y especialistas con 15+ pacientes cualificados al mes sin bajar precios."
+    />
+    <link rel="icon" href="/images/logo-busset.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://player.vimeo.com" />
+  </head>
+
+  <body class="min-h-screen overflow-x-hidden bg-white font-sans text-neutral-700 antialiased selection:bg-blush selection:text-wine">
+    <!-- Ambient background: white base with soft blush halos -->
+    <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 bg-white">
+      <div class="absolute -top-48 left-1/2 h-[34rem] w-[56rem] -translate-x-1/2 rounded-full bg-blush/60 blur-[140px]"></div>
+      <div class="absolute bottom-[-8rem] right-[-10rem] h-[26rem] w-[26rem] rounded-full bg-blush/40 blur-[120px]"></div>
+    </div>
+
+    <!-- 1. Header fijo / Badge -->
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-rose/25 bg-white/80 backdrop-blur-md">
+      <div class="mx-auto flex max-w-6xl items-center justify-center px-4 py-3">
+        <span
+          class="inline-flex items-center gap-2 rounded-full border border-rose bg-white/60 px-4 py-1.5 text-center text-[10px] font-semibold tracking-[0.18em] text-wine shadow-[0_4px_20px_-8px_#daa0a9] backdrop-blur-md sm:text-xs"
+        >
+          <span class="relative flex h-2 w-2 shrink-0">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-rose opacity-75"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-wine"></span>
+          </span>
+          MÉTODO COMPROBADO PARA CLÍNICAS MÉDICAS Y ESPECIALISTAS
+        </span>
+      </div>
+    </header>
+
+    <main class="pt-24 sm:pt-28">
+      <!-- 2. Hero VSL -->
+      <section class="mx-auto max-w-5xl px-4 text-center">
+        <img src="/images/logo-busset.png" alt="Busset Agency" class="mx-auto mb-8 h-10 w-auto sm:h-12" />
+
+        <h1 class="mx-auto max-w-4xl font-display text-3xl leading-tight font-extrabold text-ink sm:text-5xl md:text-6xl">
+          Cómo Llenar tu Agenda con <span class="text-wine">15+ Pacientes Cualificados</span> Todos los Meses Sin Bajar Tus Precios
+        </h1>
+
+        <p class="mx-auto mt-6 max-w-2xl text-base text-neutral-600 sm:text-lg">
+          Mira el video a continuación para descubrir el sistema exacto que estamos utilizando con nuestros clientes.
+        </p>
+
+        <!-- Video player -->
+        <div class="relative mx-auto mt-10 max-w-4xl">
+          <div
+            aria-hidden="true"
+            class="absolute -inset-6 -z-10 rounded-[2rem] bg-[radial-gradient(ellipse_at_center,#daa0a9_0%,#f2d7d9_45%,transparent_72%)] opacity-80 blur-2xl"
+          ></div>
+          <div class="relative overflow-hidden rounded-2xl p-[1px] [background:linear-gradient(135deg,#daa0a9,#6c1530_50%,#daa0a9)]">
+            <div class="relative aspect-video overflow-hidden rounded-2xl bg-black">
+              <video
+                id="vsl"
+                class="h-full w-full rounded-2xl object-cover shadow-2xl shadow-wine/30"
+                src={VSL_SRC}
+                poster="/images/vsl-poster.jpg"
+                autoplay
+                muted
+                playsinline
+                preload="metadata"
+              ></video>
+
+              <!-- Unmute overlay: browsers block autoplay with sound -->
+              <button
+                id="vsl-unmute"
+                type="button"
+                class="group absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/25 transition hover:bg-black/10"
+              >
+                <span
+                  class="flex h-20 w-20 items-center justify-center rounded-full border-2 border-white bg-wine shadow-[0_0_40px_#6c1530] transition group-hover:scale-110 sm:h-24 sm:w-24"
+                >
+                  <svg viewBox="0 0 24 24" class="h-9 w-9 fill-white sm:h-10 sm:w-10" aria-hidden="true">
+                    <path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06a7 7 0 0 1 0 13.42v2.06A9 9 0 0 0 14 3.23z"/>
+                  </svg>
+                </span>
+                <span class="rounded-full bg-white px-4 py-1.5 text-xs font-bold tracking-widest text-wine shadow-lg sm:text-sm">
+                  HAZ CLIC PARA ACTIVAR EL SONIDO
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. CTA agendamiento -->
+      <section class="mx-auto mt-14 max-w-3xl px-4">
+        <div class="rounded-3xl border border-rose/60 bg-white/70 p-6 text-center shadow-[0_20px_60px_-25px_#daa0a9] backdrop-blur-md sm:p-10">
+          <p class="text-xs font-semibold tracking-[0.2em] text-wine/80">PASO 2 · DESPUÉS DE VER EL VIDEO</p>
+          <a
+            href={CALENDAR_URL}
+            class="group relative mt-5 inline-flex w-full flex-col items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-b from-[#8a1d3e] to-wine px-6 py-5 text-white shadow-[0_12px_32px_-10px_#6c1530] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_44px_-4px_#daa0a9] sm:w-auto sm:px-12"
+          >
+            <span class="pointer-events-none absolute inset-y-0 -left-1/3 w-1/3 -skew-x-12 bg-white/25 blur-md transition-all duration-700 group-hover:left-[110%]"></span>
+            <span class="text-base font-extrabold tracking-wide sm:text-lg">AGENDAR MI LLAMADA DE ESTRATEGIA GRATUITA</span>
+            <span class="mt-1 text-xs font-medium text-blush sm:text-sm">Cupos limitados por mes para garantizar resultados</span>
+          </a>
+          <ul class="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-neutral-500 sm:text-sm">
+            <li><span class="text-wine">✓</span> Sesión 1 a 1 con un estratega</li>
+            <li><span class="text-wine">✓</span> Diagnóstico de tu captación actual</li>
+            <li><span class="text-wine">✓</span> Sin compromiso</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 4. Testimonios en video -->
+      <section id="testimonios" class="mx-auto mt-24 max-w-6xl px-4">
+        <div class="text-center">
+          <p class="text-xs font-semibold tracking-[0.2em] text-wine/80">CLIENTES CON LA MISMA METODOLOGÍA</p>
+          <h2 class="mt-3 font-display text-3xl font-bold text-ink sm:text-4xl md:text-5xl">
+            Casos de Éxito y <span class="text-wine">Resultados Reales</span>
+          </h2>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+          {
+            testimonials.map((t) => (
+              <article class="flex flex-col overflow-hidden rounded-lg border border-rose/40 bg-white shadow-[0_10px_40px_-24px_#6c1530] transition duration-300 hover:border-rose hover:shadow-[0_20px_50px_-20px_#daa0a9]">
+                <div class="relative aspect-video bg-blush">
+                  <iframe
+                    class="testimonial-player absolute inset-0 h-full w-full"
+                    src={toVimeoEmbed(t.videoUrl)}
+                    title={`Video testimonio de ${t.name}`}
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+
+                <div class="flex flex-1 flex-col p-6">
+                  <span class="self-start rounded-md bg-blush/60 px-3 py-1 text-xs font-semibold text-wine">{t.highlight}</span>
+                  <svg viewBox="0 0 24 24" class="h-7 w-7 fill-rose" aria-hidden="true">
+                    <path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18h6.83v-6.83H5.41A1.76 1.76 0 0 1 7.17 9.4V6zm10 0A5.17 5.17 0 0 0 12 11.17V18h6.83v-6.83h-3.42a1.76 1.76 0 0 1 1.76-1.77V6z" />
+                  </svg>
+                  <blockquote class="mt-3 flex-1 text-sm leading-relaxed text-neutral-600 sm:text-base">“{t.quote}”</blockquote>
+                  <footer class="mt-6 flex items-center justify-between gap-4 border-t border-blush pt-4">
+                    <div>
+                      <p class="font-semibold text-ink">{t.name}</p>
+                      <p class="text-sm text-wine">{t.role}</p>
+                    </div>
+                    <img src={t.logo} alt={t.logoAlt} loading="lazy" class="h-8 w-auto max-w-[110px] object-contain" onerror="this.remove()" />
+                  </footer>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+
+        <!-- CTA final -->
+        <div class="mt-16 text-center">
+          <a
+            href={CALENDAR_URL}
+            class="group relative inline-flex w-full flex-col items-center overflow-hidden rounded-2xl bg-gradient-to-b from-[#8a1d3e] to-wine px-6 py-5 text-white shadow-[0_12px_32px_-10px_#6c1530] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_44px_-4px_#daa0a9] sm:w-auto sm:px-12"
+          >
+            <span class="pointer-events-none absolute inset-y-0 -left-1/3 w-1/3 -skew-x-12 bg-white/25 blur-md transition-all duration-700 group-hover:left-[110%]"></span>
+            <span class="text-base font-extrabold tracking-wide sm:text-lg">AGENDAR MI LLAMADA DE ESTRATEGIA GRATUITA</span>
+            <span class="mt-1 text-xs font-medium text-blush sm:text-sm">Cupos limitados por mes para garantizar resultados</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-24 border-t border-blush bg-[#fdf6f7] px-4 py-10 text-center text-xs text-neutral-500">
+      <p class="mx-auto max-w-3xl leading-relaxed">
+        Este sitio no forma parte del sitio web de Facebook ni de Facebook Inc. Además, este sitio NO cuenta con el respaldo de
+        Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.
+      </p>
+      <p class="mt-4">© {year} BussetAgency.com — Derechos Reservados.</p>
+    </footer>
+
+    <script>
+      import Player from '@vimeo/player';
+
+      // VSL: unmute + restart from the beginning on first click
+      const vsl = document.getElementById('vsl') as HTMLVideoElement | null;
+      const unmute = document.getElementById('vsl-unmute');
+      unmute?.addEventListener('click', () => {
+        if (!vsl) return;
+        vsl.muted = false;
+        vsl.currentTime = 0;
+        vsl.controls = true;
+        vsl.play();
+        unmute.remove();
+      });
+
+      // Testimonials: park each player paused at 1s so a real frame shows
+      // instead of a blank thumbnail; only one video plays at a time.
+      const players = [...document.querySelectorAll<HTMLIFrameElement>('.testimonial-player')].map(
+        (el) => new Player(el)
+      );
+      players.forEach((player) => {
+        player.on('loaded', () => player.setCurrentTime(1).catch(() => {}));
+        player.on('play', () => {
+          vsl?.pause();
+          players.filter((p) => p !== player).forEach((p) => p.pause().catch(() => {}));
+        });
+      });
+      vsl?.addEventListener('play', () => players.forEach((p) => p.pause().catch(() => {})));
+    </script>
+  </body>
+</html>

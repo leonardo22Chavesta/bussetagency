@@ -13,6 +13,7 @@
     "@astrojs/sitemap": "^3.6.0",
     "@fontsource-variable/plus-jakarta-sans": "^5.2.8",
     "@tailwindcss/vite": "^4.1.13",
+    "@vimeo/player": "^2.30.4",
     "astro": "^5.14.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

@@ -1,0 +1,13 @@
+@import "tailwindcss" source(none);
+@source "../pages/calendario.astro";
+
+@theme {
+  --color-wine: #6c1530;
+  --color-rose: #daa0a9;
+  --color-blush: #f2d7d9;
+  --color-base: #16050b;
+  --color-ink: #2a0813;
+  --color-base-2: #1a070e;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+}

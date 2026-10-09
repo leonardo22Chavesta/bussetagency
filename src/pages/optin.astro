@@ -1,0 +1,190 @@
+---
+import '../styles/optin.css';
+const pageTitle = 'Llena tu agenda con 20 pacientes cualificados en 30 días | Busset Agency';
+const pageDescription =
+  'Especializada para clínicas médicas. Sin depender del boca a boca, ofertas a último minuto ni bajar precio.';
+
+const trustBlocks = [
+  {
+    title: '+3 Años en el Mercado Salud y Bienestar',
+    text: 'Entendemos cómo piensan tus pacientes y qué hace tu competencia.',
+    icon: 'M12 6v6l4 2m6-2a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z',
+  },
+  {
+    title: 'Clínicas Facturando +60,000 con un ROAS x8 a x17',
+    text: 'Con nuestra metodología hemos convertido su publicidad en un sistema.',
+    icon: 'M3 17l6-6 4 4 8-8M15 7h6v6',
+  },
+  {
+    title: 'Evita Errores que Ya Cometimos por Ti',
+    text: 'Conocemos los cuellos de botella de tu recepción.',
+    icon: 'M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4Zm-3 9 2 2 4-4',
+  },
+];
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://link.bussetagency.com" />
+  </head>
+
+  <body class="min-h-screen bg-white font-sans text-ink antialiased selection:bg-blush selection:text-wine">
+    <!-- Soft ambient glows -->
+    <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-white">
+      <div class="absolute -top-48 left-1/2 h-[520px] w-[1000px] -translate-x-1/2 rounded-full bg-blush/70 blur-[120px]"></div>
+      <div class="absolute bottom-[-15%] right-[-10%] h-[420px] w-[520px] rounded-full bg-blush/50 blur-[120px]"></div>
+    </div>
+
+    <!-- Top accent bar -->
+    <div class="h-1.5 w-full bg-gradient-to-r from-wine via-rose to-wine"></div>
+
+    <main class="mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-6 sm:pt-14">
+      <!-- 1. Exclusivity badge -->
+      <div class="flex justify-center">
+        <span
+          class="inline-flex items-center gap-2 rounded-full border border-rose bg-white/70 px-4 py-2 text-center text-[11px] font-semibold uppercase tracking-[0.18em] text-wine shadow-[0_4px_20px_-6px_rgba(108,21,48,0.25)] backdrop-blur-md sm:text-xs"
+        >
+          <span class="relative flex h-2 w-2 shrink-0">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-wine/60"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-wine"></span>
+          </span>
+          Exclusivo para directores y dueños de clínicas médicas
+        </span>
+      </div>
+
+      <!-- 2. Headline & subheadline -->
+      <header class="mx-auto mt-8 max-w-4xl text-center">
+        <h1 class="font-display text-3xl font-extrabold leading-tight text-ink sm:text-4xl lg:text-[3.1rem] lg:leading-[1.15]">
+          ¿Muchas citas y pocos pacientes que realmente pagan? Te llenamos la agenda con
+          <span class="relative whitespace-nowrap text-wine">
+            <span class="relative z-10">20 pacientes cualificados</span>
+            <span aria-hidden="true" class="absolute inset-x-0 bottom-1 -z-0 h-3 rounded-xs bg-blush sm:h-4"></span>
+          </span>
+          en 30 días o no nos pagas
+        </h1>
+        <h2 class="mx-auto mt-6 max-w-2xl text-base font-normal leading-relaxed text-ink/70 sm:text-lg">
+          Especializada para clínicas médicas. Sin depender del boca a boca, ofertas a último minuto ni bajar precio.
+        </h2>
+      </header>
+
+      <!-- 3. Capture grid -->
+      <section class="mt-12 grid items-center gap-8 lg:mt-14 lg:grid-cols-[1.15fr_1fr] lg:gap-12">
+        <!-- Left: GIF preview -->
+        <div class="relative">
+          <div aria-hidden="true" class="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-blush via-rose/40 to-blush blur-2xl"></div>
+          <div class="relative rounded-2xl border border-rose bg-white p-2 shadow-[0_25px_60px_-20px_rgba(108,21,48,0.45)]">
+            <video
+              src="/images/gif.mp4"
+              poster="/images/gif-poster.jpg"
+              aria-label="Demostración del sistema de captación de pacientes"
+              class="h-auto w-full rounded-xl object-cover"
+              width="656"
+              height="410"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+          </div>
+          <div class="relative mt-5 flex justify-center">
+            <span class="inline-flex items-center gap-2 rounded-full bg-wine px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-white shadow-lg shadow-wine/25">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+              Completa el formulario para verlo
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: Form (iframe kept intact) -->
+        <div class="relative">
+          <div
+            class="relative overflow-hidden rounded-2xl border border-rose bg-white shadow-[0_25px_60px_-20px_rgba(108,21,48,0.35)]"
+          >
+            <div class="flex items-center justify-center gap-2 bg-wine px-5 py-3 text-xs font-semibold uppercase tracking-[0.15em] text-white">
+              <svg class="h-4 w-4 text-rose" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="4" y="11" width="16" height="10" rx="2"></rect>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
+              </svg>
+              Acceso inmediato · Plazas limitadas
+            </div>
+            <div class="px-2 pt-2 sm:px-4">
+              <iframe
+                src="https://link.bussetagency.com/widget/form/js9yFFU2LnkEm8gdMUYy"
+                style="width:100%;height:100%;border:none;border-radius:0px"
+                id="inline-js9yFFU2LnkEm8gdMUYy"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Meta Ads Form"
+                data-height="432"
+                data-layout-iframe-id="inline-js9yFFU2LnkEm8gdMUYy"
+                data-form-id="js9yFFU2LnkEm8gdMUYy"
+                data-cookie-consent="true"
+                data-cookie-consent-provider="auto"
+                title="Meta Ads Form"
+              >
+              </iframe>
+              <script is:inline src="https://link.bussetagency.com/js/form_embed.js"></script>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust blocks -->
+      <section class="mt-20 lg:mt-24">
+        <div class="mx-auto mb-10 flex max-w-xs items-center gap-4">
+          <span class="h-px flex-1 bg-rose"></span>
+          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-wine">Por qué nosotros</span>
+          <span class="h-px flex-1 bg-rose"></span>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-3">
+          {
+            trustBlocks.map((block) => (
+              <article class="rounded-2xl border border-blush bg-white p-6 shadow-[0_10px_40px_-20px_rgba(108,21,48,0.3)] transition hover:-translate-y-1 hover:border-rose hover:shadow-[0_20px_50px_-20px_rgba(108,21,48,0.45)]">
+                <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-blush text-wine">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d={block.icon} />
+                  </svg>
+                </div>
+                <h3 class="mt-4 font-display text-lg font-bold leading-snug text-ink">{block.title}</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ink/65">{block.text}</p>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-blush bg-[#fdf6f7]">
+      <div class="mx-auto max-w-4xl px-4 py-10 text-center text-xs leading-relaxed text-ink/50 sm:px-6">
+        <nav class="mb-5 flex justify-center gap-6 text-sm">
+          <a href="#" class="text-wine/80 transition hover:text-wine">Términos &amp; Condiciones</a>
+          <a href="#" class="text-wine/80 transition hover:text-wine">Política de Privacidad</a>
+        </nav>
+        <p>
+          Este sitio no forma parte del sitio web de Facebook o Facebook Inc. Además, este sitio NO está respaldado por
+          Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.
+        </p>
+        <p class="mt-4 text-ink/40">© {year} BussetAgency.com — Derechos Reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

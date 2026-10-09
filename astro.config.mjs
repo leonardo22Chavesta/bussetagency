@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://bussetagency.com',
-  integrations: [react(), sitemap()],
+  integrations: [react(), sitemap({ filter: (page) => !page.includes('/calendario') })],
   vite: {
     plugins: [tailwindcss()],
   },
