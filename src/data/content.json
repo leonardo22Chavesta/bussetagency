@@ -18,7 +18,7 @@
     "title": "Logra un flujo predecible de clientes consistente en 30 días",
     "subtitle": "Implementamos un sistema 100% personalizado para medir, responder y automatizar los procesos comerciales que hoy bloquean tus resultados.",
     "primaryCta": { "label": "Agenda tu auditoría", "href": "#contacto" },
-    "secondaryCta": { "label": "Ver cómo funciona", "href": "#vsl" },
+    "secondaryCta": { "label": "Ver cómo funciona", "href": "vsl" },
     "reassurance": "Auditoría inicial para ver si tu empresa califica. Sin compromiso.",
     "videoId": "XHOmBV4js_E",
     "videoTitle": "Reproducir el video: cómo funciona el sistema de Busset Agency",
