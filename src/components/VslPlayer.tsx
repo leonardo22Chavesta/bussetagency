@@ -5,8 +5,8 @@ interface Props {
   title: string;
 }
 
-// Second shown as the cover frame and where playback starts.
-const START_SECOND = 1;
+// Second shown as the cover frame; playback always starts at 0.
+const COVER_SECOND = 1;
 
 export default function VslPlayer({ videoUrl, title }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -15,7 +15,7 @@ export default function VslPlayer({ videoUrl, title }: Props) {
   const play = () => {
     const video = videoRef.current;
     if (!video) return;
-    video.currentTime = START_SECOND;
+    video.currentTime = 0;
     video.controls = true;
     video.play();
     setPlaying(true);
@@ -26,7 +26,7 @@ export default function VslPlayer({ videoUrl, title }: Props) {
       <video
         ref={videoRef}
         className="absolute inset-0 h-full w-full bg-black object-cover"
-        src={`${videoUrl}#t=${START_SECOND}`}
+        src={`${videoUrl}#t=${COVER_SECOND}`}
         title={title}
         preload="metadata"
         playsInline

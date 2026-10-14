@@ -294,13 +294,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
       import Player from '@vimeo/player';
 
-      // VSL: unmute + restart from second 1 on first click
+      // VSL: unmute + restart from the beginning on first click
       const vsl = document.getElementById('vsl') as HTMLVideoElement | null;
       const unmute = document.getElementById('vsl-unmute');
       unmute?.addEventListener('click', () => {
         if (!vsl) return;
         vsl.muted = false;
-        vsl.currentTime = 1;
+        vsl.currentTime = 0;
         vsl.controls = true;
         vsl.play();
         unmute.remove();
