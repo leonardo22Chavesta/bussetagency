@@ -5,8 +5,7 @@ interface Props {
   title: string;
 }
 
-// Second shown as the cover frame; playback always starts at 0.
-const COVER_SECOND = 1;
+// "#t=0.001" makes mobile browsers (iOS Safari) paint the first frame as the cover.
 
 export default function VslPlayer({ videoUrl, title }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -26,7 +25,7 @@ export default function VslPlayer({ videoUrl, title }: Props) {
       <video
         ref={videoRef}
         className="absolute inset-0 h-full w-full bg-black object-cover"
-        src={`${videoUrl}#t=${COVER_SECOND}`}
+        src={`${videoUrl}#t=0.001`}
         title={title}
         preload="metadata"
         playsInline
