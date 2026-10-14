@@ -46,7 +46,7 @@ import VslPlayer from './VslPlayer';
 
     <div id="vsl" class="hero-enter hero-enter--6 mx-auto mt-12 max-w-4xl scroll-mt-28">
       <div class="relative aspect-video overflow-hidden rounded-3xl bg-mist shadow-[0_30px_70px_-36px_rgba(110,47,66,0.45)] ring-1 ring-accent">
-        <VslPlayer client:visible videoId={content.hero.videoId} title={content.hero.videoTitle} />
+        <VslPlayer client:visible videoUrl={content.hero.videoUrl} title={content.hero.videoTitle} />
       </div>
       <p class="mt-4 text-sm text-muted">{content.hero.videoCaption}</p>
     </div>

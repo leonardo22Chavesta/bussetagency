@@ -20,7 +20,7 @@
     "primaryCta": { "label": "Agenda tu auditoría", "href": "#contacto" },
     "secondaryCta": { "label": "Ver cómo funciona", "href": "vsl" },
     "reassurance": "Auditoría inicial para ver si tu empresa califica. Sin compromiso.",
-    "videoId": "XHOmBV4js_E",
+    "videoUrl": "https://res.cloudinary.com/dehmmdpau/video/upload/v1791986694/copri_final.mp4",
     "videoTitle": "Reproducir el video: cómo funciona el sistema de Busset Agency",
     "videoCaption": "En pocos minutos: cómo medimos, respondemos y automatizamos tu captación."
   },
